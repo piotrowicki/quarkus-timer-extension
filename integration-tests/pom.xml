@@ -10,10 +10,6 @@
     <artifactId>quarkus-timer-extension-integration-tests</artifactId>
     <name>Quarkus Timer Extension - Integration Tests</name>
 
-    <properties>
-        <skipITs>true</skipITs>
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
