@@ -1,0 +1,10 @@
+---
+name: "Quarkus Timer Extension"
+metadata:
+  built-with-quarkus-core: "3.30.3"
+  requires-quarkus-core: "[3.30,)"
+  minimum-java-version: "17"
+  extension-dependencies:
+  - "io.quarkus:quarkus-arc"
+  - "io.quarkus:quarkus-core"
+artifact: "pl.nowik:quarkus-timer-extension::jar:1.0.0-SNAPSHOT"
