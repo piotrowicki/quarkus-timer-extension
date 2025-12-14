@@ -17,15 +17,21 @@
 package pl.nowik.quarkus.timer.extension.it;
 
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Inject;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import pl.nowik.quarkus.timer.extension.runtime.TimerService;
+
+import pl.nowik.quarkus.timer.extension.runtime.Timed;
 
 @Path("/quarkus-timer-extension")
 @ApplicationScoped
 public class QuarkusTimerExtensionResource {
-    // add some rest methods here
 
     @GET
+    @Timed
     public String hello() {
         return "Hello quarkus-timer-extension";
     }
