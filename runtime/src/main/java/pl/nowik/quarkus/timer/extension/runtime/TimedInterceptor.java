@@ -1,6 +1,7 @@
 package pl.nowik.quarkus.timer.extension.runtime;
 
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import jakarta.annotation.Priority;
 import jakarta.inject.Inject;
@@ -13,7 +14,7 @@ import jakarta.interceptor.InvocationContext;
 @Priority(Interceptor.Priority.APPLICATION + 10)
 public class TimedInterceptor {
 
-    private static final Logger LOG = Logger.getLogger(TimedInterceptor.class.getName());
+    private static final Logger LOG = LoggerFactory.getLogger(TimedInterceptor.class);
 
     @Inject
     TimerService timerService;
